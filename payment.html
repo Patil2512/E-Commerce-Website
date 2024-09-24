@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Checkout Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="payment.css">
+
+</head>
+<body>
+    <nav class="nav container">
+        <div class="navigation d-flex">
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
+          <div class="logo">
+            <h2>SHOPTISM</h2>
+          </div>
+  
+          <div class="menu">
+            <div class="top">
+              <span class="close">close <i class="bx bx-x"></i></span>
+            </div>
+  
+            <ul class="nav-list d-flex">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="icons d-flex">
+            <div><i class="bx bx-search"></i></div>
+            <div><i class="icons d-flex"><a href="profile.html" class="bx bx-user"></a></i></div>
+            <div><i class="bx bx-heart"></i></div>
+            <div>
+              <i class="icons d-flex"><a href="cart.html" class="bx bx-shopping-bag"></a></i>
+              <span class="align-center">8</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+<!---payment HTML code----->
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>S</p>
+    </div>
+    
+    
+    <h2>Payment Gateway</h2>
+    <div class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder:</label>
+        <input type="text" class="input" placeholder="Card Holder Name">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input" data-mask="00 / 00"  placeholder="00 / 00">
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" data-mask="000" placeholder="000">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+      <div class="btn">
+        <a href="pop.html" class="btn"> Pay
+      </div> 
+      
+    </div>
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</body>
+</html>
